@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: playfair;
+}
+body{
+    width: 100%;
+    background-color: #2d2e32;
+}
+.navbar {
+    width: 100%;
+    height: calc(3vw + 3vh);
+    padding: 60px 10px 60px 10px;
+    background-color: #25262a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.logo {
+    color: var(--heading);
+    width: 150px;
+}
+.logo a img{
+    width: 100%;
+    
+}
+.nav-titles a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0 10px;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+}
+.nav-contact {
+    margin-right: 2%;
+    padding: 10px;
+}
+#logbtn,#logbtn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: linear-gradient(#00a03d,#3bce67);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 200px;
+    height: 55px;
+    border-radius: 44px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+}
+#logbtn:hover{
+
+    background: linear-gradient(#3bce67,#00a03d);
+}
+.contents-btn:hover {
+    cursor: pointer;
+}
+.mobile-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+  }
+.mobile-icon div {
+    width: 100%;
+    height: 4px;
+    margin-bottom: 4px;
+    background-color: white;
+  }
+.dashboard {
+      display: none;
+      position: absolute;
+      margin-top: 20px;
+      right: -240px;
+      width: 400px;
+      height: 150vh;
+      opacity: 0.9;
+      background-color: #3b3b3b;
+      transition: left 0.3s ease;
+      z-index: 1;
+      border-radius: 16px;
+  }
+.dashboardlink {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: top;
+      align-items: start;
+      margin-left: 40px;
+      height: 130vh;
+      font-size: 30px;
+  }
+.dashboardlink a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+  
+  }
+  .dashboardlink a:hover{
+    color: #9b9a9a;
+    
+  
+  }
+.banner{
+    width: 100%;
+    padding: 40px 20px 60px 40px;
+    display: grid;
+    grid-template-columns: 55% 45%;    
+    background-color: #25262a;
+
+}
+.banner-img{
+    margin-top: 12%;
+    margin-left: 18%;
+    width: 456px;
+    height: 456px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#circleimg {
+    position: relative;
+    top: -33px;
+    height: 605px;
+    
+}
+.banner-text{
+   margin-top: 12%;
+}
+.intro{
+    word-spacing: 0%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #64f4ab;
+}
+span{
+    width: 5%;
+    height: 3px;
+    margin: -4px 4px 0 0;
+    vertical-align: middle;
+    color: #64f4ab;
+    background-color: #51c68b;
+    display: inline-block;
+    
+}
+.intro-title{
+    font-size: 75px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 66px;
+}
+.typed-out{
+    color: #ffff;
+    overflow: hidden;
+    border-right: .75px solid rgb(0, 139, 53);
+    white-space: nowrap;
+    animation: 
+      typing 5s infinite forwards;
+    font-size: 75px;
+    width: 75px;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 82% }
+  }
+.banner-text p{
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 26px;
+    color: #ecf2fd;
+    margin-bottom: 20px;
+}
+
+.about-details{
+    margin: 10% 10%;
+    width: 85%;
+    background-color: #2d2e32;
+
+}
+h2{
+    padding: 12px;
+    font-size: 40px;
+    color: #ffff;
+    font-family: "Ubuntu";
+
+}
+p{
+    font-size: 18px;
+    color: #b2b2b2;
+    font-family: "Ubuntu";
+    padding: 12px;
+}
+.contactus{
+    width: 90%;
+    height: 100vh;
+    padding: 40px 20px 60px 40px;
+    display: grid;
+    grid-template-columns: 35% 30% 25%;    
+    background-color: #25262a;
+    border-radius: 22px;
+    margin-left: 65px;
+
+}
+.contact-text{
+   margin-top: 12%;
+}
+.intro{
+    word-spacing: 0%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #64f4ab;
+}
+span{
+    width: 5%;
+    height: 3px;
+    margin: -4px 4px 0 0;
+    vertical-align: middle;
+    color: #64f4ab;
+    background-color: #51c68b;
+    display: inline-block;
+    
+}
+.contact-text p{
+    font-size: 16px;
+}
+
+.contact-title{
+    font-size: 55px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    line-height: 66px;
+}
+.text2{
+    margin-left: 80px;
+    margin-top: 15%;
+}
+.email{
+    font-size: 25px;
+    color: #ddd9d9;
+    margin-bottom: 20px;
+    line-height: 66px;
+}
+.character {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.character img {
+    max-width: 250%;
+    position: relative;
+    top: -20%;
+  }
+
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #25262a;
+    flex-direction: row;
+    padding: 5%;
+    margin-top: 20%;
+}
+.footerLogo {
+    width: 15%;
+}
+.footerpra {
+    color: white;
+}
+.socialIcon a {
+    color: #64f4ab;
+}
+.socialIcon ion-icon {
+    background-color: #2d2e32;
+    padding: 10px;
+    margin: 5px;
+    font-size: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 1s;
+}
+/* Base styles (mobile-first approach) */
+
+/* Styles for larger screens (default) */
+
+/* 1024px width */
+@media (max-width: 1024px) {
+  
+    .mobile-icon {
+      display: block;
+      margin-left: auto;
+    }
+  
+    .dashboard {
+      width: 100%;
+      right: 0;
+    }
+  
+    .banner {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      padding: 20px;
+    }
+  
+    .banner-img {
+      width: 60%;
+      height: auto;
+      margin-left: 30%;
+    }
+  
+    .banner-text h1 {
+      font-size: 4.8rem;
+    }
+  
+    .banner-text p {
+      font-size: 1.5rem;
+    }
+    .about-details p{
+        font-size: 20px;
+    }
+    .contactus{
+        height: 40vh;
+    }
+    .contact-text{
+        margin-top: 12%;
+     }
+     
+     .contact-text p{
+         font-size: 18px;
+         margin-left: 0;
+     }
+     .intro{
+         font-size: 20px;
+     }
+     .contact-title{
+         font-size: 50px;
+         color: #ffffff;
+         margin-bottom: 20px;
+         line-height: 66px;
+     }
+     .text2{
+        margin-left: 0%;
+         margin-top: 15%;
+     }
+     .email{
+         font-size: 25px;
+         color: #ddd9d9;
+         margin-bottom: 20px;
+         line-height: 66px;
+     }
+     .character {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+       
+     .character img {
+         max-width: 290%;
+         position: relative;
+         top: -20%;
+       }
+     .footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+  }
+  
+  /* 728px width */
+  @media (max-width: 768px) {
+    .banner {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 20px;
+      }   
+    .banner-img {
+        width: 60%;
+        height: auto;
+      }
+    .banner-text h1 {
+      font-size: 52px;
+      margin: 0;
+    }
+  
+    .banner-text p {
+      font-size: 0.9rem;
+    }
+    .contactus{
+        
+        padding: 40px 20px 10px 20px;
+        display: grid;
+        grid-template-columns: 40% 30% 30%;    
+        background-color: #25262a;
+        border-radius: 22px;
+        margin-left: 45px;
+    
+    }
+    .contact-text p{
+        font-size: 16px;
+        left: 0;
+    }
+    .intro{
+        font-size: 18px;
+    }
+    .contact-title{
+        font-size: 25px;
+        margin: 0%;
+    }
+    .email{
+        font-size: 18px;
+        color: #ddd9d9;
+        margin-bottom: 20px;
+        line-height: 66px;
+    }
+  }
+  
+  /* 600px width */
+  @media (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        padding-top: 10%;
+        
+      }
+      .logo {
+        width: 100px;
+        margin-top: 10px;
+      }
+      .nav-titles {
+        display: none;
+      }
+      .nav-contact {
+        padding-top: 15px;
+      }
+      #logbtn {
+        width: 150px;
+        height: 55px;   
+        font-size: 16px;
+      }
+      .mobile-icon {
+        margin-top: 10px;
+        display: block;
+      }
+      .nav-titles.active {
+        display: none;
+        margin-bottom: 10px;
+      }
+      .nav-titles.active a {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .nav-titles.active a {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: white;
+        margin: 0 10px;
+      }
+      .dashboard {
+        display: none; /* Ensure the dashboard is always visible */
+        position: absolute;
+        right: 0;
+        top: 9%;
+        width: 240px;
+        background-color: #3b3b3b; /* Adjust as needed */
+        color: white;
+        height: 100%;
+        z-index: 1000;
+        padding: 20px;
+      }
+    .banner{
+        grid-template-columns: 1fr;
+    }
+    .banner-img {
+        display: none;
+    }
+  
+    .banner-text h1 {
+      font-size: 42px;
+    }
+  
+    .banner-text p {
+      font-size: 0.8rem;
+    }
+  
+    .call-to-action {
+      font-size: 0.9rem;
+    }
+    .contactus{    
+        width: 100%;   
+        grid-template-columns: 35% 30% 35%;
+        margin-left: 2px;    
+    }
+    .contact-text p{
+        font-size: 12px;
+        padding: 0;
+    }
+    .intro{
+        font-size: 14px;
+    }
+    .contact-title{
+        font-size: 12px;
+        margin: 0%;
+    }
+    #logbtn2 {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .email{
+        font-size: 10px;
+    }
+    .character {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    .character img {
+        max-width: 300%;
+        height: 54vh;
+        position: relative;
+        top: -24%;
+      }
+    
+  }
+  
