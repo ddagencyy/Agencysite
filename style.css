@@ -204,7 +204,7 @@ span{
 .section1 {
     display: grid;
     grid-template-columns:  60% 40% ;
-    background-color: #2d2e32;
+    width: 100%;
 }
 .cards-details {
     display: grid;
@@ -270,7 +270,9 @@ span{
 .section-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10% 0 3% 3%;
+    width: 100%;
+    background-color: #2d2e32;
+
     
 }
 .projects {
@@ -278,6 +280,7 @@ span{
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+    margin: 5% ;
 }
 .project-title {
     color: white;
