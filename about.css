@@ -14,7 +14,7 @@ body{
     width: 100%;
     height: calc(3vw + 3vh);
     padding: 60px 10px 60px 10px;
-    background-color: #25262a;
+    background-color: #dbdbdb;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@ body{
 }
 .nav-titles a {
     text-decoration: none;
-    color: white;
+    color: #000000;
     font-size: 22px;
     margin: 0 10px 0 10px;
     position: relative;
@@ -48,7 +48,7 @@ body{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    background: linear-gradient(#00a03d,#3bce67);
+    background: linear-gradient(#577ce2,#4162bd);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: 200px;
     height: 55px;
@@ -61,7 +61,7 @@ body{
 }
 #logbtn:hover{
 
-    background: linear-gradient(#3bce67,#00a03d);
+  background: linear-gradient(#385ab6,#577ce2);
 }
 .contents-btn:hover {
     cursor: pointer;
@@ -88,7 +88,7 @@ body{
       width: 400px;
       height: 150vh;
       opacity: 0.9;
-      background-color: #3b3b3b;
+      background-color: rgb(0, 77, 122);
       transition: left 0.3s ease;
       z-index: 1;
       border-radius: 16px;
@@ -105,7 +105,7 @@ body{
   }
 .dashboardlink a{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-bottom: 10px;
   
   }
@@ -145,15 +145,15 @@ body{
     word-spacing: 0%;
     font-weight: bold;
     font-size: 20px;
-    color: #64f4ab;
+    color: #6584da;
 }
 span{
     width: 5%;
     height: 3px;
     margin: -4px 4px 0 0;
     vertical-align: middle;
-    color: #64f4ab;
-    background-color: #51c68b;
+    color: #4162bd;
+    background-color: #4162bd;
     display: inline-block;
     
 }
@@ -166,7 +166,7 @@ span{
 .typed-out{
     color: #ffff;
     overflow: hidden;
-    border-right: .75px solid rgb(0, 139, 53);
+    border-right: .75px solid rgb(106, 116, 209);
     white-space: nowrap;
     animation: 
       typing 5s infinite forwards;
@@ -218,22 +218,6 @@ p{
 .contact-text{
    margin-top: 12%;
 }
-.intro{
-    word-spacing: 0%;
-    font-weight: bold;
-    font-size: 20px;
-    color: #64f4ab;
-}
-span{
-    width: 5%;
-    height: 3px;
-    margin: -4px 4px 0 0;
-    vertical-align: middle;
-    color: #64f4ab;
-    background-color: #51c68b;
-    display: inline-block;
-    
-}
 .contact-text p{
     font-size: 16px;
 }
@@ -263,7 +247,7 @@ span{
 .character img {
     max-width: 250%;
     position: relative;
-    top: -20%;
+    top: -23%;
   }
 
 
@@ -271,7 +255,7 @@ span{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #25262a;
+    background-color: #dbdbdb;
     flex-direction: row;
     padding: 5%;
     margin-top: 20%;
@@ -280,19 +264,23 @@ span{
     width: 15%;
 }
 .footerpra {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 .socialIcon a {
-    color: #64f4ab;
+  color: #152374;
 }
 .socialIcon ion-icon {
-    background-color: #2d2e32;
+    background-color: #bebebe;
     padding: 10px;
     margin: 5px;
     font-size: 35px;
     border-radius: 15px;
     cursor: pointer;
     transition: all 1s;
+}
+.socialIcon ion-icon:hover{
+  background-color: #a8a8a8;
+  color: #3044b8;
 }
 /* Base styles (mobile-first approach) */
 
@@ -396,12 +384,15 @@ span{
         height: auto;
       }
     .banner-text h1 {
-      font-size: 52px;
+      font-size: 58px;
       margin: 0;
     }
   
     .banner-text p {
       font-size: 0.9rem;
+    }
+    .dashboard{
+      background-color:#dbdbdb;
     }
     .contactus{
         
@@ -482,8 +473,6 @@ span{
         right: 0;
         top: 9%;
         width: 240px;
-        background-color: #3b3b3b; /* Adjust as needed */
-        color: white;
         height: 100%;
         z-index: 1000;
         padding: 20px;
@@ -496,7 +485,7 @@ span{
     }
   
     .banner-text h1 {
-      font-size: 42px;
+      font-size: 47px;
     }
   
     .banner-text p {
@@ -528,7 +517,7 @@ span{
         font-size: 12px;
     }
     .email{
-        font-size: 10px;
+        font-size: 12px;
     }
     .character {
         display: flex;

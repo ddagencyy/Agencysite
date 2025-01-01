@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AmcDevSolutions</title>
+    <title>Muteeb Ahmad</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       type="module"
@@ -16,14 +16,15 @@
       defer
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="style.css" />
+    <script src="function.js"></script>
   </head>
   <body>
     <main>
       <div class="navbar">
         <div class="logo">
-          <a href="#"><img src="assets/logo.png" alt="Logo" /></a>
+          <a href="#"><img src="/Assets/logo.png" alt="Logo" /></a>
         </div>
         <div class="nav-titles">
           <a href="index.html">Home</a>
@@ -31,7 +32,9 @@
           <a href="#project">Projects</a>
         </div>
         <div class="nav-contact">
-          <a href="https://calendly.com/buissnessworld4/30min" id="logbtn">Consult Now</a>
+          <a href="https://calendly.com/buissnessworld4/30min" id="logbtn"
+            >Consult Now</a
+          >
         </div>
         <div class="mobile-icon">
           <div></div>
@@ -60,13 +63,16 @@
             individuals and businesses worldwide enhance their online presence.
             Together, we build market-leading digital solutions!
           </p>
-          <a data-aos="fade-right" href="https://calendly.com/buissnessworld4/30min" id="logbtn"
+          <a
+            data-aos="fade-right"
+            href="#contact"
+            id="logbtn"
             >Contact Us</a
           >
         </div>
         <div class="banner-img" data-aos="zoom-out">
           <div class="img">
-            <img src="assets/ceo.png" id="circleimg" alt="muteeb" />
+            <img src="/Assets/ceo.png" id="circleimg" alt="muteeb" />
           </div>
           <div class="circle1"></div>
           <div class="circle1"></div>
@@ -138,7 +144,7 @@
             choose AMC Development Solutions, you're choosing a committed and
             passionate team that will contribute to your project's success.
           </p>
-          <a data-aos="fade-right" href="#project" id="logbtn"
+          <a data-aos="fade-right" href="#video-showcase" id="logbtn"
             >Recent Projects</a
           >
         </div>
@@ -170,7 +176,7 @@
               <img
                 class="scroll-img"
                 data-aos="flip-right"
-                src="assets/Dento Site.png"
+                src="Assets\Dento Site.png"
                 alt="images"
               />
             </div>
@@ -183,7 +189,7 @@
               <img
                 class="scroll-img"
                 data-aos="flip-right"
-                src="assets/Real Estate.png"
+                src="Assets\Real Estate.png"
                 alt="images"
               />
             </div>
@@ -221,7 +227,10 @@
             designed to connect food lovers with your culinary offerings
             effortlessly.
           </p>
-          <a data-aos="fade-right" href="https://ddagencyy.github.io/Restaurent-site/" id="logbtn"
+          <a
+            data-aos="fade-right"
+            href="https://ddagencyy.github.io/Restaurent-site/"
+            id="logbtn"
             >Visit Now</a
           >
         </div>
@@ -232,7 +241,7 @@
               <img
                 class="scroll-img"
                 data-aos="flip-right"
-                src="assets/resturent.png"
+                src="Assets\resturent.png"
                 alt="images"
               />
             </div>
@@ -244,6 +253,37 @@
         <a href="contactus.html" id="view-all">View All</a>
       </div> -->
 
+      <!-- Video Showcase Section -->
+      <section id="video-showcase" class="section">
+        <div class="container">
+          <h2>Our Recent Projects</h2>
+          <p>Take a look at some of our latest work</p>
+          <div class="video-carousel">
+            <div class="video-container">
+              <!-- Video items will be dynamically inserted here -->
+            </div>
+            <button class="carousel-button prev" aria-label="Previous video">
+              &lt;
+            </button>
+            <button class="carousel-button next" aria-label="Next video">
+              &gt;
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section">
+        <div class="container">
+          <h2>What Our Clients Say</h2>
+          <p>
+            Don't just take our word for it - hear from our satisfied clients
+          </p>
+          <div class="testimonials-grid">
+            <!-- Testimonial items will be dynamically inserted here -->
+          </div>
+        </div>
+      </section>
+      <!-- skillset is here -->
       <div class="skill-section" id="skills">
         <div class="skills" data-aos="flip-right">
           <!-- icon is here -->
@@ -272,7 +312,7 @@
         </div>
         <div class="skills" data-aos="flip-right">
           <!-- icon is here -->
-          <div class="skill-title">Python jango</div>
+          <div class="skill-title">Python Django</div>
           <h1 class="ski">85%</h1>
         </div>
         <div class="skills" data-aos="flip-right">
@@ -296,7 +336,7 @@
           <h1 class="ski">90%</h1>
         </div>
       </div>
-
+      <!-- welcome section is here -->
       <div class="section-4">
         <div class="welcome">
           <div class="circle" data-aos="fade-right"></div>
@@ -312,32 +352,56 @@
         </div>
       </div>
 
+      <!-- Contact Form Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <p>Have a project in mind? Let's discuss how we can help.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+            <input type="hidden" name="access_key" value="358e1cc8-fb91-4b19-bf9e-f51021f17d6f">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" id="logbtn">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
       <section class="footer">
         <h1 class="footerLogo">
-          <img src="assets/logo.png" width="100%" height="10%" alt="" />
+          <img src="/Assets/logo.png" width="100%" height="10%" alt="" />
         </h1>
         <p class="footerpra">
           Building web applications with MERN is like crafting digital magic.
         </p>
         <div class="socialIcons">
-          <a href=""> <ion-icon name="logo-instagram"></ion-icon></a>
-          <a href="https://www.linkedin.com/in/muteebcheema/"> <ion-icon name="logo-linkedin"></ion-icon></a>
-          <a href="https://wa.me/+9203196433765" title="Send us a message on WhatsApp">
+          <a href="https://www.instagram.com/amcdevsolutions/"> <ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="https://www.facebook.com/profile.php?id=61567379615346"> <ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://www.linkedin.com/in/muteebcheema/">
+            <ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+            href="https://wa.me/+9203196433765"
+            title="Send us a message on WhatsApp"
+          >
             <ion-icon name="logo-whatsapp"></ion-icon>
-        </a>
-        
+          </a>
         </div>
       </section>
     </main>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        // Global settings:
-        duration: 1000,
-        offset: 110,
-      });
-    </script>
-    <script>
+    
+
+    <script>     
       const mobileIcon = document.querySelector(".mobile-icon");
       const dashboard = document.querySelector(".dashboard");
       const banner = document.querySelector(".banner");
@@ -361,5 +425,6 @@
         }
       });
     </script>
+
   </body>
 </html>
