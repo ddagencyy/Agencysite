@@ -501,7 +501,7 @@ p{
         margin-left: 2px;    
     }
     .contact-text p{
-        font-size: 12px;
+        font-size: 9px;
         padding: 0;
     }
     .intro{
@@ -509,7 +509,8 @@ p{
     }
     .contact-title{
         font-size: 12px;
-        margin: 0%;
+        margin: 10% 0;
+        line-height: 0%;
     }
     #logbtn2 {
         width: 100px;
@@ -517,7 +518,7 @@ p{
         font-size: 12px;
     }
     .email{
-        font-size: 12px;
+        font-size: 10px;
     }
     .character {
         display: flex;
